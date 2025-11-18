@@ -1,0 +1,15 @@
+services:
+  pdf-poc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pdf-poc
+    ports:
+      - "7890:8080"
+      - "7891:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
