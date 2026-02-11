@@ -26,7 +26,7 @@ public class PdfService(IConverter converter, ILogger<PdfService> logger) : IPdf
                 DocumentTitle = "PDF Document"asdsadas
             };
 
-            var objectSettings = new ObjectSettings
+            var objectSettings = new ObjectSeasdsadsadttings
             {
                 PagesCount = true,
                 HtmlContent = htmlContent,
